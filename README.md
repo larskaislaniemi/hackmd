@@ -123,6 +123,7 @@ Environment variables (will overwrite other server configs)
 | HMD_ALLOW_ORIGIN | `localhost, hackmd.io` | domain name whitelist (use comma to separate) |
 | HMD_PROTOCOL_USESSL | `true` or `false` | set to use ssl protocol for resources path (only applied when domain is set) |
 | HMD_URL_ADDPORT | `true` or `false` | set to add port on callback url (port 80 or 443 won't applied) (only applied when domain is set) |
+| HMD_URL_FORCE_PROTOCOL | `https://` | force protocol on url (e.g. behind HTTPS-HTTP reverse proxy) |
 | HMD_USECDN | `true` or `false` | set to use CDN resources or not (default is `true`) |
 | HMD_ALLOW_ANONYMOUS | `true` or `false` | set to allow anonymous usage (default is `true`) |
 | HMD_ALLOW_FREEURL | `true` or `false` | set to allow new note by accessing not exist note url |
@@ -171,6 +172,7 @@ Server settings `config.json`
 | usessl | `true` or `false` | set to use ssl server (if true will auto turn on `protocolusessl`) |
 | protocolusessl | `true` or `false` | set to use ssl protocol for resources path (only applied when domain is set) |
 | urladdport | `true` or `false` | set to add port on callback url (port 80 or 443 won't applied) (only applied when domain is set) |
+| urlforceprotocol | `https://` | force protocol on url (e.g. behind HTTPS-HTTP reverse proxy) |
 | usecdn | `true` or `false` | set to use CDN resources or not (default is `true`) |
 | allowanonymous | `true` or `false` | set to allow anonymous usage (default is `true`) |
 | allowfreeurl | `true` or `false` | set to allow new note by accessing not exist note url |
